@@ -1,4 +1,3 @@
-// import "@fontsource/metropolis";
 function changeColor(radioBtn) {
   const allBoxes = document.querySelectorAll(".num-pair");
   allBoxes.forEach((box) => {
