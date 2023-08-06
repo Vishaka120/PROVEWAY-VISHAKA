@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Metropolis";
+}
+.container {
+  max-width: 341px;
+  margin: auto;
+  /* height: 100px; */
+
+  margin-top: 90px;
+}
+.header-text:before {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 93px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #007f61;
+}
+.header-text {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #007f61;
+}
+.header-text:after {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 93px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: #007f61;
+}
+.num-pair {
+  border: 0.9px solid #c8c8c8;
+  min-height: 74px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.card {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  /* font-size: 22px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: white;
+  border-radius: 50%;
+  border: 0.45px solid #007f61;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #007f61;
+}
+
+.dkk {
+  font-weight: 600;
+}
+.offer {
+  /* margin-top: 30px; */
+  font-size: 14px;
+  font-weight: 600;
+}
+#dropdown {
+  display: none;
+}
+.dropdown-header {
+  /* margin: 10px; */
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: 5px; */
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+select {
+  width: 72px;
+  margin-bottom: 5px;
+  height: 25px;
+}
+option {
+  font-size: 11px;
+}
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.cart-button {
+  background-color: #007f61;
+  color: white;
+  width: 341px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.copy-right {
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.greenBackground {
+  background: #f4fbf9;
+  border: 1px solid;
+}
